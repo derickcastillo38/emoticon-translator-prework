@@ -1,7 +1,6 @@
 # require modules here
 
-def load_library(
-/home/derickcastillo38/emoticon-translator-prework/liblib/emoticons.yml)
+def load_library(/home/derickcastillo38/emoticon-translator-prework/liblib/emoticons.yml)
   # code goes here
 end
 
