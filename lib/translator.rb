@@ -13,13 +13,23 @@ def load_library(path)
     emoticon_hash["get_meaning"][emoticon_set.last] = english_word
   end
   emoticon_hash
-  binding.pry
+  # binding.pry
 end
 
 def get_japanese_emoticon
-  # code goes here
+  emoticon_hash = load_library(path)
+  result = emoticon_hash["get_emoticon"][emoticon]
+  if result == nil
+    result = "Sorry, that emoticon was not found" 
+  end
+  result
 end
 
 def get_english_meaning
-  # code goes here
+  emoticon_hash = load_library(path)
+  result = emoticon_hash["get_meaning"][emoticon]
+  if result == nil
+    result = "Sorry, that emoticon was not found" 
+  end
+  result
 end
